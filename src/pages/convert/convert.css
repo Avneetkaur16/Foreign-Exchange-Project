@@ -1,0 +1,70 @@
+.convert-main {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    overflow: hidden;
+}
+
+.convert-container {
+    width: 40%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.convert-item {
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.convert-item input {
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    height: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.convert-container button {
+    width: 70%;
+    height: 30px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(128, 7, 128);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.convert-container button:hover {
+    background-color: rgb(108, 0, 108);
+}
+
+.convert-output {
+    width: 40%;
+    height: 20%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.convert-output p {
+    font-size: 20px;
+    font-weight: 600;
+}
