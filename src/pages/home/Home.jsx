@@ -13,7 +13,7 @@ const Home = () => {
   const fetchSymbols = async() => {
     try {
       const { data } = await axios.get(`${apiUrl}/symbols?api_key=${apiKey}`);
-      localStorage(setItem("symbols", JSON.stringify(data?.symbols)))
+      localStorage.setItem("symbols", JSON.stringify(data?.symbols))
       setSymbols(data?.symbols);
       
     } catch (error) {
