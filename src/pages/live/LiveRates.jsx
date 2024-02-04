@@ -41,7 +41,7 @@ const LiveRates = () => {
                 <p>Select To Convert: </p>
                 <select onChange={handleSelect}>
                     <option defaultValue='All'>All</option>
-                    {Object.keys(symbols).map(key => (
+                    {symbols && Object.keys(symbols).map(key => (
                         <option value={key}>{key}: {symbols[key]}</option>
                     ))}
                 </select>
